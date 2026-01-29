@@ -271,12 +271,40 @@ are changing our daily lives, where we have got 3rd position.</p>
         </div>
 
         <!-- RIGHT SIDE FORM -->
-        <form class="contact-form" action="mailto:asmitabharti2002@gmail.com" method="POST" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <form
+    class="contact-form"
+    action="https://formspree.io/f/mpqrdrpw"
+    method="POST"
+>
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+    >
+
+    <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+    >
+
+    <textarea
+        name="message"
+        placeholder="Your Message"
+        required
+    ></textarea>
+
+    <!-- IMPORTANT: reply-to -->
+    <input type="hidden" name="_replyto">
+
+    <button class="btn" type="submit">
+        Send Message
+    </button>
+</form>
+
+
 
     </div>
 
@@ -297,6 +325,7 @@ are changing our daily lives, where we have got 3rd position.</p>
 </body>
 
 </html>
+
 
 
 
