@@ -119,7 +119,7 @@ body {
         .floating-image {
             
             animation: float 3s ease-in-out infinite;
-            display: block; /* important for animation in flex */
+            display: inline-block; /* important for animation in flex */
         }
         
  /* animation applied to wrapper */
@@ -486,5 +486,6 @@ body {
 .contact-footer p {
     margin: 4px 0;
 }
+
 
 
