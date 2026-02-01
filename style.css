@@ -607,5 +607,8 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.hero-title {
+  margin-bottom: 30px;
+}
 
 
