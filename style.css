@@ -557,5 +557,55 @@ body {
 
 }
 
+/* ===== 4 CENTERED BOXES ===== */
+.box-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.box-card {
+  background: black;
+  border: 1px solid red;
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.box-card h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.view-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: red;          /* 🔴 FILLED */
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  border: 1px solid red;
+  transition: 0.3s ease;
+}
+
+/* OPTIONAL HOVER (clean look) */
+.view-btn:hover {
+  background: transparent;
+  color: red;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .box-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .box-section {
+    grid-template-columns: 1fr;
+  }
+}
 
 
