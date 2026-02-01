@@ -532,6 +532,30 @@ body {
   }
 }
 /* ================= END ================= */
+/* ===== MOBILE RIGHT SPACE FIX ===== */
+@media (max-width: 768px) {
+
+  /* FORCE NO HORIZONTAL SCROLL */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* IMAGE FIX */
+  .floating-image,
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+  }
+
+  /* REMOVE SIDE PUSH */
+  * {
+    box-sizing: border-box;
+  }
+
+}
 
 
 
