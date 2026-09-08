@@ -474,7 +474,7 @@ footer span{background:linear-gradient(135deg,var(--rose-deep),var(--lav-deep));
 <canvas id="petal-canvas"></canvas>
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
-<div class="cursor-heart" id="cursorHeart">🌸</div>
+<!--<div class="cursor-heart" id="cursorHeart">🌸</div>-->
 
 <!-- ── NAV ── -->
 <nav id="navbar">
@@ -757,13 +757,13 @@ footer span{background:linear-gradient(135deg,var(--rose-deep),var(--lav-deep));
         </div>
         <!-- IMPORTANT: reply-to -->
         <input type="hidden" name="_replyto">
-        <button type="submit" class="form-submit-btn" id="submitBtn">💌 &nbsp;Send Message</button>
+        <button type="submit" class="form-submit-btn" id="submitBtn">✉️ &nbsp;Send Message</button>
       </form>
     </div>
 
     <!-- ══ THANK YOU — shown after Formspree success ══ -->
     <div class="thankyou-state" id="thankyouState">
-      <span class="ty-icon">💌</span>
+      <span class="ty-icon">✉️</span>
       <div class="ty-title">Thank You, <em>Truly!</em></div>
       <p class="ty-msg">
         Your message has been sent directly to my inbox! 🌸<br>
@@ -915,7 +915,7 @@ contactForm.addEventListener('submit', async function(e) {
       submitBtn.textContent = '⚠️  ' + msg;
       setTimeout(() => {
         submitBtn.style.background = 'linear-gradient(135deg,var(--rose-deep),var(--lav-deep))';
-        submitBtn.innerHTML = '💌 &nbsp;Send Message';
+        submitBtn.innerHTML = '✉️ &nbsp;Send Message';
       }, 3000);
     }
   } catch (err) {
@@ -925,7 +925,7 @@ contactForm.addEventListener('submit', async function(e) {
     submitBtn.textContent = '⚠️  Network error — try again';
     setTimeout(() => {
       submitBtn.style.background = 'linear-gradient(135deg,var(--rose-deep),var(--lav-deep))';
-      submitBtn.innerHTML = '💌 &nbsp;Send Message';
+      submitBtn.innerHTML = '✉️ &nbsp;Send Message';
     }, 3000);
   }
 });
@@ -935,7 +935,7 @@ document.getElementById('tyBackBtn').addEventListener('click', function() {
   tyState.classList.remove('active');
   formWrap.classList.remove('hidden');
   submitBtn.disabled = false;
-  submitBtn.innerHTML = '💌 &nbsp;Send Message';
+  submitBtn.innerHTML = '✉️ &nbsp;Send Message';
   submitBtn.style.background = 'linear-gradient(135deg,var(--rose-deep),var(--lav-deep))';
   document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
 });
